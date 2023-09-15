@@ -14,6 +14,12 @@
                     "type": "os"
                 },
                 {
+                    "foreground": "#BFA8BF",
+                    "style": "powerline",
+                    "template": " <#fff></> {{ .Name }} ",
+                    "type": "shell"
+                },
+                {
                     "foreground": "#CF8E6D",
                     "properties": {
                         "folder_icon": "",
