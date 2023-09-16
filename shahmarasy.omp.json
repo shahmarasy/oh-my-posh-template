@@ -3,6 +3,7 @@
     "blocks": [
         {
             "alignment": "left",
+            "overflow": "hide",
             "segments": [
                 {
                     "foreground": "#26C6DA",
@@ -46,6 +47,7 @@
         },
         {
             "alignment": "right",
+            "overflow": "break",
             "segments": [
                 {
                     "foreground": "#81ff91",
@@ -96,6 +98,7 @@
                         "fetch_virtual_env": true
                     },
                     "style": "powerline",
+                    "prefix":"asd",
                     "template": "<#F3EFF5>|</>  {{ .Full }} ",
                     "type": "python"
                 },
@@ -108,7 +111,7 @@
                 {
                     "foreground": "#000000",
                     "style": "powerline",
-                    "template": "<#F3EFF5>|</>   {{ .Full }} ",
+                    "template": "<#F3EFF5>|</>   {{ .Context }} ",
                     "type": "docker"
                 }
             ],
@@ -128,5 +131,11 @@
             "type": "prompt"
         }
     ],
+    "console_title_template": "{{.Folder}}{{if .Root}} :: root{{end}} :: {{.Shell}}",
+    "transient_prompt": {
+        "background": "transparent",
+        "foreground": "#26C6DA",
+        "template": "<#45F1C2><b>⚡</b></><b> {{ .UserName }}</b> <#26C6DA>❯</><#45F1C2>❯</> "
+    },
     "version": 2
 }
